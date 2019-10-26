@@ -37,6 +37,7 @@ namespace CodingTest01
         /// </returns>
         public static int Main(string[] args)
         {
+
             bool pause = true;
             int result = -1;
             try
@@ -70,6 +71,9 @@ namespace CodingTest01
                      .WithNotParsed<CommandLineOptions>(errors =>
                      {
                          result = -1;
+                         Console.WriteLine("Example of valid calls");
+                         Console.WriteLine("dotnet CodingTest01.dll -w 5 -h 5 -x 0 -y 0 -o N -c AARALA -p false");
+                         Console.WriteLine("dotnet CodingTest01.dll -w 2 -h 1 -x 1 -y 1 -o W -c RALALA -p true");
                      });
             }
             catch (InvalidOrientationException)

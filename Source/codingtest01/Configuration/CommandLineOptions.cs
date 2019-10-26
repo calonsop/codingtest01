@@ -48,13 +48,13 @@ namespace CodingTest01.Configuration
         /// <summary>
         /// Gets or sets the Rover's movement commands.
         /// </summary>
-        [Option('c', "commands", Required = true, HelpText = "The Rover's movement commands. Array without spaces with the secuence of commands: Advance (Ä), Turn Left (L), Turn Right (R). Example : AALAARALA")]
+        [Option('c', "commands", Required = true, HelpText = "The Rover's movement commands. Array without spaces with the secuence of commands: Advance (A), Turn Left (L), Turn Right (R). Example : AALAARALA")]
         public string Commands { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether will be a pause after the execution.
         /// </summary>
-        [Option('p', "pause", Required = false, Default = "true", HelpText = "Establish in true if we want the program makes a pause to watch the results.")]
+        [Option('p', "pause", Required = false, Default = "true", HelpText = "Establish in true (or false) if you want (or not) that the program makes a pause to watch the results.")]
         public string Pause { get; set; }
 
         #endregion Properties
