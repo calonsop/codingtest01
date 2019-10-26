@@ -44,7 +44,7 @@ namespace CodingTest01
                 Parser.Default.ParseArguments<CommandLineOptions>(args)
                      .WithParsed<CommandLineOptions>(o =>
                      {
-                         pause = o.Pause;
+                         bool.TryParse( o.Pause, out pause);
 
                          Orientation initialOrientation = o.RoverO.ToOrientation();
                          Terrain mars = new Terrain(o.TerrainWidth, o.TerrainHeight);
