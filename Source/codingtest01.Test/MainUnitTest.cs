@@ -42,6 +42,7 @@ namespace CodingTest01.Test
             arguments.RoverY = 0.ToString();
             arguments.RoverO = 'N'.ToString();
             arguments.Commands = "AAAA";
+            arguments.Pause = "false";
 
             var args = arguments.GenerateCommandLineArgs();
 

@@ -37,7 +37,7 @@ namespace CodingTest01
         /// </returns>
         public static int Main(string[] args)
         {
-            bool pause = false;
+            bool pause = true;
             int result = -1;
             try
             {

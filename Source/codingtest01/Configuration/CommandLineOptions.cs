@@ -54,7 +54,7 @@ namespace CodingTest01.Configuration
         /// <summary>
         /// Gets or sets a value indicating whether will be a pause after the execution.
         /// </summary>
-        [Option('p', "pause", Required = false, Default = "false", HelpText = "True if we wan't the program makes a pause to watch the results.")]
+        [Option('p', "pause", Required = false, Default = "true", HelpText = "Establish in true if we want the program makes a pause to watch the results.")]
         public string Pause { get; set; }
 
         #endregion Properties

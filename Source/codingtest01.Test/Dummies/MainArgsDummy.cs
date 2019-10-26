@@ -66,6 +66,14 @@ namespace CodingTest01.Test.Dummies
         public string Commands { get; set; }
 
         /// <summary>
+        /// Gets or sets the pause argument
+        /// </summary>
+        /// <remarks>
+        /// Valid values: true and false. The value is false as default.
+        /// </remarks>
+        public string Pause { get; set; } = "false";
+
+        /// <summary>
         /// Generate a command line args array with the content values.
         /// </summary>
         /// <returns>The resulted command array args to introduce in main class.</returns>
@@ -100,6 +108,11 @@ namespace CodingTest01.Test.Dummies
             if (!string.IsNullOrWhiteSpace(this.Commands))
             {
                 result.Add(string.Format(ArgumentTemplate, "c", this.Commands));
+            }
+
+            if (!string.IsNullOrWhiteSpace(this.Pause))
+            {
+                result.Add(string.Format(ArgumentTemplate, "p", this.Pause));
             }
 
             return result.ToArray();
